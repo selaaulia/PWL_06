@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserBaruSeeder extends Seeder
 {
@@ -17,7 +19,7 @@ class UserBaruSeeder extends Seeder
             'username' => 'admin',
             'name' => 'Administrator Baru',
             'email' => 'admin.baru@admin.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('password')
         ]);
     }
 }
